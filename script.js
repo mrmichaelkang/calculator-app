@@ -30,12 +30,23 @@ function operate(number1, number2, operator) {
   }
 }
 
-// Variables
-let number1 = 4;
-let operator = "+";
-let number2 = 2;
+// DOM
+const calcText = document.querySelector(".calc-text");
+const calcButtons = document.querySelectorAll(".calc-btn");
 
-console.log(operate(number1, number2, "+"));
-console.log(operate(number1, number2, "-"));
-console.log(operate(number1, number2, "*"));
-console.log(operate(number1, number2, "/"));
+calcButtons.forEach((calcButton) => {
+  console.log(calcButton.textContent);
+  calcButton.addEventListener("click", () => {
+    calcText.innerHTML = calcButton.textContent;
+  });
+});
+
+// Variables
+// let number1 = 4;
+// let operator = "+";
+// let number2 = 2;
+
+// console.log(operate(number1, number2, "+"));
+// console.log(operate(number1, number2, "-"));
+// console.log(operate(number1, number2, "*"));
+// console.log(operate(number1, number2, "/"));
