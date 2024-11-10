@@ -23,14 +23,19 @@
   border-radius: 15px;
 }
 
-.light-mode {
-  background-color: #E6E6E6;
-  /* padding: 10px; */
+
+.selected-toggle {
+  color: black;
 }
 
-/* .dark-mode {
-  background-color: #E6E6E6;
-} */
+.not-selected-toggle {
+  color: #E6E6E6;
+}
+
+.not-selected-toggle:hover {
+  color: #888;
+  transition: 0.2s ease-in;
+}
 
 
 .calculator {
